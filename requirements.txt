@@ -1,0 +1,15 @@
+auto-py-to-exe==2.44.1
+datasets==2.21.0
+html2text==2024.2.26
+html5lib==1.1
+lxml==5.2.2
+parse==1.20.2
+parser_libraries==3.7
+pygame==2.6.0
+PySocks==1.7.1
+reflex-motion==0.0.1
+tiktoken==0.7.0
+torchaudio==2.2.2
+torchvision==0.17.2
+transformers==4.44.2
+wandb==0.17.9
