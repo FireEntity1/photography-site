@@ -41,7 +41,12 @@ def photocard(photo, aircraft):
         ),
         width="70vh",
         size="5",
-        margin="5vh"
+        margin="5vh",
+
+        box_shadow="rgba(151, 65, 252, 0.8) 0 15px 30px -10px",
+        background_image="linear-gradient(144deg,#272838,#5B42F3 50%,#EB9486)",
+        box_sizing="border-box",
+        opacity=1,
     ),
     while_hover={"scale": 1.1,"rotate":1.1},
     while_tap={"scale": 1.1,"rotate":1.1},
@@ -53,9 +58,9 @@ def index() -> rx.Component:
     # Welcome Page (Index)
     return rx.container(
         rx.vstack( rx.center(
-                rx.heading("Aviation Photography!", size="9"), ),
+                rx.heading("Fire's Aviation Photography!", size="9"), ),
             rx.text(
-                "A collection of aircraft photos I've taken!",
+                "A collection of aviation photography I've done over the past few months!",
                 size="5",
             ),
             spacing="2",
@@ -65,6 +70,7 @@ def index() -> rx.Component:
 
         infocard("Camera", "Canon T7"),
         infocard("Lens", "EF-S 55-250"),
+        infocard("Instagram Page", "ak.planespotting"),
 
         photocard("airshow-1.jpg", "United Boeing 777-300"),
         photocard("sfo.jpg", "Korean Air Boeing 777-300"),
@@ -74,7 +80,7 @@ def index() -> rx.Component:
     )
 
 style = {
-    "background": "linear-gradient(210.00deg, #261C15 0.75%, #344664 88.52%)",
+    "background": "linear-gradient(210.00deg, #2d3047 0.75%, #000000 88.52%)",
 }
 
 app = rx.App(style=style)
